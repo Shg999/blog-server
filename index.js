@@ -5,7 +5,7 @@ import cors from 'cors';
 import bodyParser from 'body-parser';
 
 const app= express();
-app.use(cors({origin:"http://localhost:3000"}))
+app.use(cors({origin:"*"}))
 app.use(bodyParser.json({ extended: true }))
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use('/', Router)
